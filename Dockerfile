@@ -22,7 +22,7 @@ WORKDIR /app
 COPY --from=builder /app/target/comsumer-0.0.1-SNAPSHOT.jar consumer.jar
 
 # Expone el puerto en el que se ejecutará la aplicación
-EXPOSE 8081
+EXPOSE 8082
 
 # Comando para ejecutar la aplicación Spring Boot
 CMD ["java", "-jar", "consumer.jar"]
